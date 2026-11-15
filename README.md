@@ -8,7 +8,7 @@
 
 ![AI podcast generator demo: two hosts with cloned voices, waveform with chapters and the SRT transcript](docs/images/ai-podcast-generator-two-host-demo.png)
 
-**Listen to the real demo:** [episode.mp3](examples/two-host-demo/episode.mp3) (Alex, male voice clone + Sam, female voice clone, 19 s) · [transcript.srt](examples/two-host-demo/transcript.srt) · [chapters.json](examples/two-host-demo/chapters.json) · [feed.xml](examples/two-host-demo/feed.xml) · [script.md](examples/two-host-demo/script.md)
+**Web page with audio player:** [huggingface.co/spaces/miragea/open-podcast-generator](https://huggingface.co/spaces/miragea/open-podcast-generator) · **Listen to the real demo:** [episode.mp3](examples/two-host-demo/episode.mp3) (Alex, male voice clone + Sam, female voice clone, 19 s) · [transcript.srt](examples/two-host-demo/transcript.srt) · [chapters.json](examples/two-host-demo/chapters.json) · [feed.xml](examples/two-host-demo/feed.xml) · [script.md](examples/two-host-demo/script.md)
 
 <audio controls src="https://raw.githubusercontent.com/RTY2345RR/open-podcast-generator/main/examples/two-host-demo/episode.mp3"></audio>
 
