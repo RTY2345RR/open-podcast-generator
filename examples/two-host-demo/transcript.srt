@@ -1,0 +1,15 @@
+1
+00:00:00,300 --> 00:00:05,531
+Alex: Welcome to the show. Today we turned a long research paper into this episode,
+
+2
+00:00:05,531 --> 00:00:08,316
+and neither of us recorded a single word.
+
+3
+00:00:09,216 --> 00:00:13,781
+Sam: That's right, Alex. Our voices were cloned from two short sample clips,
+
+4
+00:00:13,781 --> 00:00:18,475
+and the transcript, chapters and RSS feed were written out automatically.

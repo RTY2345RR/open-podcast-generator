@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "segments": [
+    {
+      "speaker": "Alex",
+      "startTime": 0.3,
+      "endTime": 8.316,
+      "body": "Welcome to the show. Today we turned a long research paper into this episode, and neither of us recorded a single word."
+    },
+    {
+      "speaker": "Sam",
+      "startTime": 9.216,
+      "endTime": 18.475,
+      "body": "That's right, Alex. Our voices were cloned from two short sample clips, and the transcript, chapters and RSS feed were written out automatically."
+    }
+  ]
+}

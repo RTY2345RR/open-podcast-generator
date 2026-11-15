@@ -1,0 +1,14 @@
+<item>
+  <title>Open Podcast Generator demo, two hosts with cloned voices</title>
+  <description>A two-line demo episode. Alex (male host) and Sam (female host) each speak in a voice cloned from a short reference clip.</description>
+  <pubDate>Sun, 15 Nov 2026 03:42:06 +0000</pubDate>
+  <guid isPermaLink="false">db4766286ed06fa5dc0a8048cb0054bb</guid>
+  <enclosure url="https://raw.githubusercontent.com/RTY2345RR/open-podcast-generator/main/examples/two-host-demo/episode.mp3" length="309613" type="audio/mpeg"/>
+  <itunes:duration>19</itunes:duration>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:episodeType>full</itunes:episodeType>
+  <itunes:author>RTY2345RR</itunes:author>
+  <podcast:transcript url="https://raw.githubusercontent.com/RTY2345RR/open-podcast-generator/main/examples/two-host-demo/transcript.srt" type="application/srt"/>
+  <podcast:transcript url="https://raw.githubusercontent.com/RTY2345RR/open-podcast-generator/main/examples/two-host-demo/transcript.json" type="application/json"/>
+  <podcast:chapters url="https://raw.githubusercontent.com/RTY2345RR/open-podcast-generator/main/examples/two-host-demo/chapters.json" type="application/json+chapters"/>
+</item>

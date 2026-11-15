@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="t d">
+<title id="t">AI podcast generator workflow: PDF or URL to a two-host podcast with cloned voices</title>
+<desc id="d">Five steps: read a PDF, web page, YouTube video or text; an OpenAI-compatible LLM writes a two-host script (or you write it); each host line is voiced with that host's cloned voice; lines are stitched into a loudness-normalised MP3 with chapters; transcript, chapters JSON, show notes and an RSS feed item are written.</desc>
+<rect width="1200" height="430" rx="18" fill="#0d111c"/>
+<text x="40" y="54" font-family="Helvetica,Arial,sans-serif" font-size="28" font-weight="700" fill="#eef1f7">How open-podcast-generator works</text>
+<text x="40" y="88" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#8c96af">open-podcast-generator make paper.pdf  =  script + render, re-runnable: finished lines are reused</text>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8c96af"/></marker></defs>
+<rect x="40" y="130" width="200" height="150" rx="14" fill="#161b2a" stroke="#60a5fa" stroke-width="2"/>
+<text x="54" y="170" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#60a5fa">1  Source</text>
+<text x="54" y="210" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#eef1f7">PDF · web page · YouTube</text>
+<text x="54" y="236" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#8c96af">text · Markdown · stdin</text>
+<line x1="243" y1="205" x2="266" y2="205" stroke="#8c96af" stroke-width="2" marker-end="url(#a)"/>
+<rect x="270" y="130" width="200" height="150" rx="14" fill="#161b2a" stroke="#a78bfa" stroke-width="2"/>
+<text x="284" y="170" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#a78bfa">2  Script</text>
+<text x="284" y="210" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#eef1f7">Any OpenAI-compatible LLM</text>
+<text x="284" y="236" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#8c96af">or your own script.md</text>
+<line x1="473" y1="205" x2="496" y2="205" stroke="#8c96af" stroke-width="2" marker-end="url(#a)"/>
+<rect x="500" y="130" width="200" height="150" rx="14" fill="#161b2a" stroke="#f472b6" stroke-width="2"/>
+<text x="514" y="170" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#f472b6">3  Voices</text>
+<text x="514" y="210" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#eef1f7">One cloned voice per host</text>
+<text x="514" y="236" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#8c96af">Miragea voice engine</text>
+<line x1="703" y1="205" x2="726" y2="205" stroke="#8c96af" stroke-width="2" marker-end="url(#a)"/>
+<rect x="730" y="130" width="200" height="150" rx="14" fill="#161b2a" stroke="#4ade80" stroke-width="2"/>
+<text x="744" y="170" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#4ade80">4  Episode</text>
+<text x="744" y="210" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#eef1f7">Stitch, -16 LUFS, MP3</text>
+<text x="744" y="236" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#8c96af">ID3 chapters, cover art</text>
+<line x1="933" y1="205" x2="956" y2="205" stroke="#8c96af" stroke-width="2" marker-end="url(#a)"/>
+<rect x="960" y="130" width="200" height="150" rx="14" fill="#161b2a" stroke="#facc15" stroke-width="2"/>
+<text x="974" y="170" font-family="Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#facc15">5  Publish</text>
+<text x="974" y="210" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#eef1f7">SRT · VTT · JSON transcript</text>
+<text x="974" y="236" font-family="Helvetica,Arial,sans-serif" font-size="13.5" fill="#8c96af">chapters.json · RSS item</text>
+<rect x="40" y="315" width="1120" height="80" rx="14" fill="#161b2a"/>
+<text x="60" y="348" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#eef1f7">Edit between steps:  open-podcast-generator script paper.pdf -o script.md  →  edit lines and chapters  →  open-podcast-generator render script.md</text>
+<text x="60" y="376" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8c96af">Hosts: --host "Ana=https://.../ana.wav" --ref-text "Ana=exact words"  or  --host "Ben=actor:ID"   ·   default demo hosts: Alex (male) + Sam (female)</text>
+</svg>

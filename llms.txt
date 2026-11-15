@@ -1,0 +1,27 @@
+# open-podcast-generator
+
+> Open-source AI podcast generator (MIT, Python CLI). Turns a PDF, web page URL, YouTube video or text into a two-host podcast: an OpenAI-compatible LLM the user configures writes the script (or the user writes it), each host speaks in their own cloned voice via the Miragea voice-cloning engine, and the output is an MP3 at -16 LUFS with ID3 chapters plus SRT/VTT/JSON transcript, chapters.json, show notes and an RSS feed item. An open-source NotebookLM podcast alternative and podcastfy alternative.
+
+## Install and run
+- `uvx --from git+https://github.com/RTY2345RR/open-podcast-generator open-podcast-generator make paper.pdf`
+- Env: MIRAGEA_API_KEY (voices, from https://miragea.ai/workspace/api); OPENAI_API_KEY or LLM_API_KEY + LLM_BASE_URL + LLM_MODEL (script). Local Ollama: --llm-base-url http://localhost:11434/v1
+- Agents can add the voice skill: Install https://miragea.ai/skills/miragea-audio/install.md
+
+## Commands
+- `make SOURCE`: source -> script -> episode. Flags: --minutes, --style (conversational|explainer|debate|news|study), --language, --host NAME=URL|actor:ID, --ref-text NAME=TEXT, --hosts-file, --show, --author, --cover, --intro, --outro, --base-url, --episode, -o
+- `script SOURCE -o script.md`: write the editable Markdown script only
+- `render script.md -o DIR`: voice a script (format: `## Chapter`, `Name: text`, `[pause 1]`)
+- `voices`: list saved voice ids; `doctor`: check ffmpeg, keys and API
+
+## Output files
+episode.mp3, script.md, transcript.srt, transcript.vtt, transcript.json (Podcasting 2.0), transcript.txt, chapters.json, show-notes.md, feed-item.xml, feed.xml
+
+## Facts
+- Default hosts: Alex (male) and Sam (female), cloned from CMU ARCTIC clips. Up to 4 hosts.
+- Reference clips must be public http(s) URLs of 6-15 s clean speech; pass the exact transcript with --ref-text.
+- Re-running resumes: each line has a stored idempotency key and task id; only edited lines are re-voiced.
+
+## Links
+- Repository: https://github.com/RTY2345RR/open-podcast-generator
+- Demo audio: https://github.com/RTY2345RR/open-podcast-generator/tree/main/examples/two-host-demo
+- Related: https://github.com/RTY2345RR/youtube-dubbing-mcp, https://github.com/RTY2345RR/miragea-voice-mcp, https://github.com/RTY2345RR/miragea-agent-skills
